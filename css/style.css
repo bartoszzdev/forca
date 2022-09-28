@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --bg-color: #E5E5E5;
+    --main-color: #0A3871;
+    --gray-color: #495057
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+}
+
+header {
+    padding: 40px 80px 0px;
+}
+
+/*  HOME   */   
+
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.start-btn {
+    max-width: 317px;
+    padding: 32px 24px;
+    color: #FFF;
+    background-color: var(--main-color);
+    border: none;
+}
+
+.addWord-btn {
+    max-width: 317px;
+    padding: 32px 24px;
+    color: var(--main-color);
+    background-color: #FFF;
+    border: 1px solid var(--main-color);
+}
+
+/*  NEW WORD PAGE  */
+
+.addWord {
+    width: 100%;
+    max-width: 620px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newWord-input {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--main-color);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.newWord-input::placeholder {
+    color: var(--main-color);
+}
+
+.warning-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-bottom: 16px;
+}
+
+.buttons-box {
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    gap: 24px;
+}
+
+.save-btn {
+    padding: 22px 20px;
+    color: #FFF;
+    background-color: var(--main-color);
+    border: none;
+}
+
+.cancel-btn {
+    padding: 22px 20px;
+    color: var(--main-color);
+    background-color: #FFF;
+    border: 1px solid var(--main-color);
+}
+
+.warning {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--gray-color);
+}
+
+/*  BOARD GAME PAGE  */
+
+.board {
+    width: 100%;
+/*     max-width: 650px;
+    margin: 0 auto; */
+    padding: 0 2% 2%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-board {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.result-text {
+    max-width: 200px;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.game-word {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game-word span {
+    display: inline-block;
+    padding: 18px 0px 24px;
+    margin: 0 16px;
+    width: 60px;
+    height: 72px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border-bottom: 4px solid var(--main-color);
+}
+
+.wrong-letters {
+    margin-top: 27px;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 32px;
+    color: var(--gray-color);
+}
+
+.newGame-btn {
+    padding: 20px;
+    color: #FFF;
+    background-color: var(--main-color);
+    border: none
+}
+
+.giveup-btn {
+    padding: 20px;
+    color:var(--main-color);
+    background-color: #FFF;
+    border: 1px solid var(--main-color);
